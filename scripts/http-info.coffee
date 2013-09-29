@@ -55,8 +55,8 @@ module.exports = (robot) ->
 
 
             if title and description and not process.env.HUBOT_HTTP_INFO_IGNORE_DESC
-              msg.send "http: #{title}\n#{description}"
+              msg.send "#{title}\n#{description}"
 
             else if title
-              msg.send "http: #{title}"
+              msg.send "#{title}"
         )
